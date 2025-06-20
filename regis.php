@@ -1,19 +1,19 @@
 <?php
-include 'koneksi.php';
+include "koneksi.php";
 
 $pesan = "";
 
-if(isset($_POST["regis"])){
+if(isset($_POST['regis'])){
     $email = $_POST['email'];
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $cek = mysqli_query(mysql: $koneksi, query: "SELECT * FROM users WHERE username = '$username'");
+    $cek = mysqli_query(mysql: $koneksi, query: "SELECT * FROM user WHERE username = '$username'");
     if(mysqli_num_rows(result: $cek) > 0){
         $pesan = "USERNAME SUDAH DIGUNAKAN!";
     }else{
-        $passwordHash = password_hash(password: $password, algo:"PASSWORD_DEFAULT");
-        $query = "INSERT INTO users (email,username,password) VALUES ('$email','$username','$passwordHash')";
+        $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+        $query = "INSERT INTO user (email, username, password) VALUES ('$email','$username','$passwordHash')";
         $insert = mysqli_query(mysql: $koneksi, query: $query);
 
         if($insert){
@@ -23,6 +23,7 @@ if(isset($_POST["regis"])){
         }
     }
 }
+?>
 
 <!DOCTYPE html>
 <html lang="id">
@@ -30,7 +31,7 @@ if(isset($_POST["regis"])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrasi - Sistem Management Laboratorium</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="regis.css">
 </head>
 <body>
     <div class="form-container">
@@ -45,7 +46,7 @@ if(isset($_POST["regis"])){
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Daftar</button>
+            <button type="submit" name="regis">Daftar</button>
         </form>
     </div>
 </body>
