@@ -23,7 +23,7 @@
                     <p>2 kelas</p>
                 </div>
                 <div class="card">
-                    <h2>Jumlah kategori barang</h2> 
+                    <h2>Jumlah Kategori Barang</h2> 
                     <p>2 jenis barang</p>
                 </div>
             </div>
