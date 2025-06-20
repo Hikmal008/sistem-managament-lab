@@ -1,3 +1,29 @@
+<?php
+include 'koneksi.php';
+
+$pesan = "";
+
+if(isset($_POST["regis"])){
+    $email = $_POST['email'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $cek = mysqli_query(mysql: $koneksi, query: "SELECT * FROM users WHERE username = '$username'");
+    if(mysqli_num_rows(result: $cek) > 0){
+        $pesan = "USERNAME SUDAH DIGUNAKAN!";
+    }else{
+        $passwordHash = password_hash(password: $password, algo:"PASSWORD_DEFAULT");
+        $query = "INSERT INTO users (email,username,password) VALUES ('$email','$username','$passwordHash')";
+        $insert = mysqli_query(mysql: $koneksi, query: $query);
+
+        if($insert){
+            $pesan = "REGISTRASI BERHASIL! SELAMAT DATANG";
+        } else{
+            $pesan = "REGISTRASI GAGAL: ". mysqli_error(mysql: $koneksi);
+        }
+    }
+}
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
