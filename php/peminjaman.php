@@ -12,13 +12,6 @@
         <header>
             <h1>Data Peminjaman Barang</h1>
         </header>
-
-        <div class="add-loan">
-            <a href="tambah_peminjaman.php">
-                <button>+ Tambah Peminjaman</button>
-            </a>
-        </div>
-
         <table>
             <thead>
                 <tr>
