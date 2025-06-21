@@ -13,9 +13,9 @@
             <li><a href="dashboard.php">Dashboard</a></li>
             <li><a href="inventaris.php">inventaris</a></li>
             <li><a href="#">peminjaman</a></li>
-            <li><a href="#">pengguna lab</a></li>
+            <li><a href="pl.php">pengguna lab</a></li>
             <li><a href="#">pengguna</a></li>
-            <li><a href="#">laporan</a></li>
+            <li><a href="laporan.php">laporan</a></li>
             <li><a href="#">logout</a></li>
         </ul>
         <Footer>
