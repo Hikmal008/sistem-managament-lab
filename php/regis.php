@@ -35,7 +35,7 @@ if(isset($_POST['regis'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrasi - Sistem Management Laboratorium</title>
-    <link rel="stylesheet" href="regis.css">
+    <link rel="stylesheet" href="../css/regis.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
