@@ -12,7 +12,7 @@
         <ul style="list-style-type: none;">
             <li><a href="dashboard.php">Dashboard</a></li>
             <li><a href="inventaris.php">inventaris</a></li>
-            <li><a href="#">peminjaman</a></li>
+            <li><a href="peminjaman.php">peminjaman</a></li>
             <li><a href="pl.php">pengguna lab</a></li>
             <li><a href="pengguna.php">pengguna</a></li>
             <li><a href="laporan.php">laporan</a></li>
