@@ -1,1 +1,0 @@
-# sistem-managament-lab
