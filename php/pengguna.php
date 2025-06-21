@@ -12,13 +12,6 @@
         <header>
             <h1>Manajemen Pengguna</h1>
         </header>
-
-        <div class="add-user">
-            <a href="tambah_pengguna.php">
-                <button>+ Tambah Pengguna</button>
-            </a>
-        </div>
-
         <table>
             <thead>
                 <tr>
