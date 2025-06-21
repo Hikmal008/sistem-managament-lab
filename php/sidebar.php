@@ -10,8 +10,8 @@
     <div class="sidebar">
         <h1>SISTEM MANAGEMENT LAB</h1>
         <ul style="list-style-type: none;">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">inventaris</a></li>
+            <li><a href="dashboard.php">Dashboard</a></li>
+            <li><a href="inventaris.php">inventaris</a></li>
             <li><a href="#">peminjaman</a></li>
             <li><a href="#">pengguna lab</a></li>
             <li><a href="#">pengguna</a></li>
