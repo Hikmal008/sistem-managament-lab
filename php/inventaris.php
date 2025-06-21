@@ -1,3 +1,8 @@
+<?php
+    include "koneksi.php";
+    $no = 1;
+    $query = mysqli_query($koneksi, "SELECT * FROM inventaris ORDER BY id DESC");
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -27,18 +32,20 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php while($data = mysqli_fetch_array($query)) { ?>
                     <tr>
-                        <td>1</td>
-                        <td>PC Desktop</td>
-                        <td>Perangkat Keras</td>
-                        <td>15</td>
-                        <td>Baik</td>
-                        <td>Lab A</td>
+                        <td><?= $no++ ; ?></td>
+                        <td><?= $data['barang']; ?></td>
+                        <td><?= $data['kategori']; ?></td>
+                        <td><?= $data['jumlah']; ?></td>
+                        <td><?= $data['kondisi']; ?></td>
+                        <td><?= $data['lokasi']; ?></td>
                         <td>
                             <button class="edit">Edit</button>
                             <button class="delete">Hapus</button>
                         </td>
                     </tr>
+                    <?php } ?>
                 </tbody>
             </table>
         </div>
