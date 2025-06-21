@@ -14,7 +14,7 @@
             <li><a href="inventaris.php">inventaris</a></li>
             <li><a href="#">peminjaman</a></li>
             <li><a href="pl.php">pengguna lab</a></li>
-            <li><a href="#">pengguna</a></li>
+            <li><a href="pengguna.php">pengguna</a></li>
             <li><a href="laporan.php">laporan</a></li>
             <li><a href="#">logout</a></li>
         </ul>
