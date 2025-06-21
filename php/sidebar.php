@@ -16,7 +16,7 @@
             <li><a href="pl.php">pengguna lab</a></li>
             <li><a href="pengguna.php">pengguna</a></li>
             <li><a href="laporan.php">laporan</a></li>
-            <li><a href="#">logout</a></li>
+            <li><a href="logout.php">logout</a></li>
         </ul>
         <Footer>
             <p>&copy; 2025 Sistem Management Lab. All rights reserved.</p>  

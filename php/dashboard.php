@@ -1,3 +1,7 @@
+<?php
+    include "koneksi.php";
+    include "session.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
